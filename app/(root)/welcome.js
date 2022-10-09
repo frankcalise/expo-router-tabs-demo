@@ -1,12 +1,20 @@
-import { Stack, useLink } from "expo-router";
+import { Stack, useLink, Link } from "expo-router";
 import { View, TouchableOpacity, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Welcome({ route }) {
   // const { test = 5 } = route.params;
   // console.log({ test });
   const link = useLink();
   return (
-    <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
+    <SafeAreaView
+      style={{
+        alignItems: "center",
+        justifyContent: "space-between",
+        flex: 1,
+        padding: 10,
+      }}
+    >
       <Stack.Screen options={{ headerShown: false }} />
       <Text>Welcome!</Text>
       <Text>
@@ -19,6 +27,9 @@ export default function Welcome({ route }) {
       >
         <Text>I'm ready</Text>
       </TouchableOpacity>
-    </View>
+      <View>
+        <Link href="/modal">Present modal</Link>
+      </View>
+    </SafeAreaView>
   );
 }

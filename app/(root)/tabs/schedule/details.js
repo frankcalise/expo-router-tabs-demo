@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 
 export default function Details({ navigation, route }) {
-  const { itemId = 42, otherParam } = route.params;
+  const { itemId = 42, otherParam } = route.params || {};
 
   return (
     <View>
@@ -13,7 +13,7 @@ export default function Details({ navigation, route }) {
           navigation.goBack();
         }}
       >
-        Details Screen
+        Go Back
       </Text>
     </View>
   );
