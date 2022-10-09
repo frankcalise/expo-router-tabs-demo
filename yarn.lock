@@ -1784,15 +1784,6 @@
   dependencies:
     nanoid "^3.1.23"
 
-"@react-navigation/stack@^6.2.3":
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-6.3.2.tgz#ba0a65e10e2b165185f20718046f25d8c9abb076"
-  integrity sha512-wb8koMp4OTrG5geOqEFPDatTyl8dsSyRBHN4h0wzgNT29V/JjkS3LYwkGLLfUmMfeLXFyIfEPILAjYLFmnk3dA==
-  dependencies:
-    "@react-navigation/elements" "^1.3.6"
-    color "^4.2.3"
-    warn-once "^0.1.0"
-
 "@segment/loosely-validate-event@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@segment/loosely-validate-event/-/loosely-validate-event-2.0.0.tgz#87dfc979e5b4e7b82c5f1d8b722dfd5d77644681"
@@ -3169,10 +3160,10 @@ expo-modules-core@0.11.7:
     compare-versions "^3.4.0"
     invariant "^2.2.4"
 
-expo-router@~0.0.19:
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-0.0.25.tgz#453fb767beb37a80b89bd295c8338f3fa475eed6"
-  integrity sha512-/jdrBdD4giFeWyqZOSi5581j0JJQYY8QJsfzMBo9xWt402eyG1gkz9nb9+p1jP/4qaVOys9XB/hpnkL95lqTGA==
+expo-router@^0.0.26:
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-0.0.26.tgz#9d39f9c5207d1307763ad684b0bde19c23958b75"
+  integrity sha512-FRBitypGdajs8ubvxPnio3+lfKKlUUCRfbzwVrIkb3yyByQSD3ehtR7YU5K92TuwI2ybfJbx6smayBczKXIy6Q==
   dependencies:
     "@bacons/expo-metro-runtime" "^2.0.1"
     "@bacons/react-views" "^1.1.3"
@@ -3181,7 +3172,6 @@ expo-router@~0.0.19:
     "@react-navigation/drawer" "^6.4.4"
     "@react-navigation/native" "^6.0.12"
     "@react-navigation/native-stack" "^6.8.0"
-    "@react-navigation/stack" "^6.2.3"
     expo-constants "~13.2.4"
     expo-linking "^3.2.2"
     expo-splash-screen "^0.16.2"
